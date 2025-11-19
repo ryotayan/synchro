@@ -69,56 +69,93 @@ a {
     padding-bottom: 4px;
 }
 
-.site-header__nav li:last-child {}
-
 .site-header__nav a:hover::after {
     width: 100%;
     background: #3984ee;
 }
 
-.nav_btn {}
-
 .nav_btn a {
     background-color: #08A4D6;
-    border-radius: 5px;
+    background: linear-gradient(to bottom, #1cc8f0, #08A4D6);
+    border-radius: 10px;
     color: white;
     font-weight: bold;
+    padding: 16px 32px;
     display: inline-block;
-    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 6px 0 #057a9b, 0 10px 20px rgba(0, 0, 0, 0.25);
     transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        background-color 0.3s ease;
+}
+
+.nav_btn a::after {
+    content: none;
+}
+
+.nav_btn a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.25);
+    transform: skewX(-25deg);
+    transition: left 0.4s ease;
 }
 
 .nav_btn a:hover {
-    transform: translateY(4px);
-    box-shadow: 6px 2px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 9px 0 #057a9b, 0 16px 24px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to bottom, #2ee1ff, #0BB7EA);
+}
+
+.nav_btn a:hover::before {
+    left: 150%;
+}
+
+.nav_btn a:active {
+    transform: translateY(4px); /* 下に沈む */
+    box-shadow: 0 2px 0 #057a9b; /* 影を小さく → 押された感 */
+    background: linear-gradient(to bottom, #18b4d9, #0892bf);
 }
 
 /* メインビジュアル */
 .hero {
-    width: 100%;
-    padding: 40px 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 50px 40px;
+    display: flex;
+    position: relative;
+    justify-content: center;
 }
 
 .catch {
-    font-size: 40px;
-    font-weight: bold;
-    color: #e4551d;
-    line-height: 1.4;
-    margin-bottom: 20px;
-    transform: rotate(-4deg);
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    font-size: 46px; 
+    font-weight: 700;
+    line-height: 1.35;
+    color: #d9652f;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: rotate(-5deg);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    max-width: 500px;
 }
 
 .hero-img-wrapper {
-    display: inline-block;
-    padding: 10px;
-    border-radius: 6px;
+    width: 100%;
 }
 
 .hero-img-wrapper img {
-    width: 500px;
-    border-radius: 4px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
     display: block;
 }
