@@ -1,3 +1,59 @@
-.title {
-    margin: auto;
+
+/* ヘッダー */
+.header {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2a72c7;
+}
+
+.nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #2a72c7;
+}
+
+/* メインビジュアル */
+.hero {
+    width: 100%;
+    padding: 40px 60px;
+}
+
+.catch {
+    font-size: 40px;
+    font-weight: bold;
+    color: #e4551d;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    transform: rotate(-4deg);
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+}
+
+.hero-img-wrapper {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.hero-img-wrapper img {
+    width: 500px;
+    border-radius: 4px;
+    display: block;
 }
