@@ -58,8 +58,8 @@ a {
     left: 0;
     bottom: 0;
     width: 0%;
-    height: 1px;
-    background: #000;
+    height: 2px;
+    background: #3984ee;
     transition: width 0.3s ease;
 }
 
@@ -118,44 +118,130 @@ a {
 }
 
 .nav_btn a:active {
-    transform: translateY(4px); /* 下に沈む */
-    box-shadow: 0 2px 0 #057a9b; /* 影を小さく → 押された感 */
+    transform: translateY(4px);
+    /* 下に沈む */
+    box-shadow: 0 2px 0 #057a9b;
+    /* 影を小さく → 押された感 */
     background: linear-gradient(to bottom, #18b4d9, #0892bf);
 }
 
 /* メインビジュアル */
 .hero {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 50px 40px;
+    padding: 0px 40px;
     display: flex;
     position: relative;
     justify-content: center;
 }
 
 .catch {
-    font-size: 46px; 
-    font-weight: 700;
+    font-size: 50px;
+    font-weight: 300;
     line-height: 1.35;
-    color: #d9652f;
+    color: #FF7B2B;
     position: absolute;
-    top: 20%;
-    left: 10%;
+    top: 10px;
+    left: 30px;
     transform: rotate(-5deg);
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     z-index: 10;
-    max-width: 500px;
+    width: auto;
 }
 
 .hero-img-wrapper {
     width: 100%;
+    position: relative;
 }
 
 .hero-img-wrapper img {
-    width: 100%;
+    position: absolute;
+    top: 40px;
+    left: 200px;
+    width: 80%;
     height: auto;
     border-radius: 12px;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
     display: block;
+}
+
+/* pronaviとは */
+.about-contents {
+    margin-top: 800px;
+    display: flex;
+}
+
+.about-inner {
+    width: 80%;
+    margin: 50px;
+}
+
+.about-inner h2 {
+    position: relative;
+    padding: 20px 30px; 
+    display: inline-block;
+}
+
+.about-inner h2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /* 左上の横線 */
+    width: 25px;
+    height: 3px;
+    background-color: #FF7B2B;
+}
+
+.about-inner h2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /* 左上の縦線 */
+    width: 3px;
+    height: 25px;
+    background-color: #FF7B2B;
+}
+
+/* 右下のカギかっこ */
+.about-title {
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.about-title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    /* 右下の横線 */
+    width: 25px;
+    height: 3px;
+    background-color: #FF7B2B;
+}
+
+.about-title::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    /* 右下の縦線 */
+    width: 3px;
+    height: 25px;
+    background-color: #FF7B2B;
+}
+
+.about-inner span {
+    color: #FF7B2B;
+}
+
+.about-img {
+    width: 80%;
 }
