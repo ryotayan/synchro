@@ -179,7 +179,7 @@ a {
 
 .about-inner h2 {
     position: relative;
-    padding: 20px 30px; 
+    padding: 20px 30px;
     display: inline-block;
 }
 
@@ -214,7 +214,7 @@ a {
     display: inline-block;
 }
 
-.about-title::before{
+.about-title::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -226,7 +226,7 @@ a {
     background-color: #FF7B2B;
 }
 
-.about-title::after{
+.about-title::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -244,4 +244,55 @@ a {
 
 .about-img {
     width: 80%;
+}
+
+
+/* 選ばれる理由 */
+.reasons-contents {
+    position: relative;
+    margin-top: 50px;
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.reasons-contents span {
+    font-size: 70px;
+    letter-spacing: 0.5em;
+    color: #FF7B2B;
+    opacity: 0.5;
+    text-align: center;
+    display: block;
+    z-index: 1;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.flex .reason1 {
+    width: 500px;
+}
+
+.flex img {
+    width: 350px;
+}
+
+.reason-title {
+    padding: 10px 10px 20px 0;
+}
+
+.reason-summary {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 30px;
 }
