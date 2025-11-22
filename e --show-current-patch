@@ -1,0 +1,53 @@
+* [33m858ce64[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/ryota5[m[33m, [m[1;31morigin/feature/ryota5[m[33m)[m 講師紹介追加
+*   [33m8f256af[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #11 from ryotayan/feature/manami1
+[32m|[m[33m\[m  
+[32m|[m * [33m83c8b1b[m おはようございます
+[32m|[m * [33m8e1c736[m おはようございます”
+[32m|[m[32m/[m  
+*   [33mdf67d3d[m Merge pull request #10 from ryotayan/feature/aoi4
+[34m|[m[35m\[m  
+[34m|[m * [33m4b86581[m 選ばれる理由のひとつ目だけ完成
+* [35m|[m   [33me893655[m Merge pull request #9 from ryotayan/feature/ryota4
+[35m|[m[1;31m\[m [35m\[m  
+[35m|[m [1;31m|[m[35m/[m  
+[35m|[m[35m/[m[1;31m|[m   
+[35m|[m * [33mffb76c9[m[33m ([m[1;31morigin/feature/ryota4[m[33m)[m エラー
+[35m|[m * [33m8ddd518[m ローカルの変更を保存
+* [1;31m|[m   [33m2372a56[m Merge pull request #8 from ryotayan/feature/aoi3
+[1;31m|[m[1;33m\[m [1;31m\[m  
+[1;31m|[m [1;33m|[m[1;31m/[m  
+[1;31m|[m[1;31m/[m[1;33m|[m   
+[1;31m|[m * [33mf5ec22c[m ProNaviとはまで完了
+[1;31m|[m[1;31m/[m  
+*   [33m509785d[m Merge pull request #7 from ryotayan/feature/ryota2
+[1;34m|[m[1;35m\[m  
+[1;34m|[m * [33m1c65bed[m[33m ([m[1;31morigin/feature/ryota2[m[33m)[m 追加しました
+[1;34m|[m[1;34m/[m  
+*   [33mdf6e200[m Merge pull request #6 from ryotayan/feature/aoi2
+[1;36m|[m[31m\[m  
+[1;36m|[m * [33mbfb0e20[m header追加
+[1;36m|[m[1;36m/[m  
+*   [33m76964f4[m Merge pull request #5 from ryotayan/feature/ryota1
+[32m|[m[33m\[m  
+[32m|[m * [33m0d37436[m[33m ([m[1;31morigin/feature/ryota1[m[33m)[m 追加
+[32m|[m[32m/[m  
+*   [33m8a8f8af[m Merge pull request #4 from ryotayan/feature/aoi1
+[34m|[m[35m\[m  
+[34m|[m * [33m4f84781[m enに変更
+[34m|[m[34m/[m  
+*   [33mff169f8[m Merge pull request #3 from ryotayan/feature/ryota
+[36m|[m[1;31m\[m  
+[36m|[m * [33mfc48908[m[33m ([m[1;31morigin/feature/ryota[m[33m)[m 追加
+[36m|[m[36m/[m  
+*   [33m83776d8[m[33m ([m[1;32mmain[m[33m)[m Merge pull request #2 from ryotayan/feature/aoi
+[1;32m|[m[1;33m\[m  
+[1;32m|[m * [33mdd90460[m style.css追加
+[1;32m|[m[1;32m/[m  
+*   [33mfa89b98[m Merge pull request #1 from ryotayan/feature/ryo
+[1;34m|[m[1;35m\[m  
+[1;34m|[m * [33m2a65234[m[33m ([m[1;31morigin/feature/ryo[m[33m)[m 追加
+[1;34m|[m[1;34m/[m  
+*   [33m80ee6fb[m Merge branch 'main' of github.com:ryotayan/synchro
+[1;36m|[m[31m\[m  
+[1;36m|[m * [33m47022c9[m Initial commit
+* [33m3475757[m Create index.html
