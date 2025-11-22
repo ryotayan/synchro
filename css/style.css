@@ -342,7 +342,6 @@ h4 {
     clip-path: polygon(100% 0, 100% 100%, 0 100%);
 }
 
-/* 画像共通 */
 .teacher-img {
     flex: 1;
     position: relative;
@@ -355,7 +354,6 @@ h4 {
     object-fit: cover;
 }
 
-/* テキスト共通 */
 .teacher-text {
     flex: 1.1;
     background: #eac7cf;
@@ -363,7 +361,6 @@ h4 {
     position: relative;
 }
 
-/* 右へ向かって斜めにカット */
 .teacher-text::after {
     content: "";
     position: absolute;
@@ -375,7 +372,6 @@ h4 {
     clip-path: polygon(0 0, 100% 0, 0 100%);
 }
 
-/* 画像側：右が斜め */
 .right-slant::after {
     content: "";
     position: absolute;
@@ -387,7 +383,6 @@ h4 {
     clip-path: polygon(0 0, 100% 0, 0 100%);
 }
 
-/* 画像側：左が斜め */
 .left-slant::after {
     content: "";
     position: absolute;
@@ -399,7 +394,6 @@ h4 {
     clip-path: polygon(100% 0, 100% 100%, 0 0);
 }
 
-/* テキスト側：右が斜め（画像と噛み合う） */
 .teacher-text.right-right::before {
     content: "";
     position: absolute;
@@ -412,7 +406,6 @@ h4 {
     z-index: -1;
 }
 
-/* テキスト側：左が斜め（画像と噛み合う） */
 .teacher-text.left-slant::before {
     content: "";
     position: absolute;
@@ -424,8 +417,6 @@ h4 {
     clip-path: polygon(100% 0, 100% 100%, 0 0);
     z-index: -1;
 }
-
-/* 見出し・テキスト */
 
 .label {
     font-size: 14px;
