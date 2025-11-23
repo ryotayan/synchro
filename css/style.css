@@ -308,6 +308,9 @@ iframe {
 
 .teacher-section {
     position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 h4 {
@@ -319,6 +322,7 @@ h4 {
     left: 50%;
     transform: translateX(-50%)
 }
+
 .teacher-section span {
     font-size: 70px;
     letter-spacing: 0.5em;
@@ -328,11 +332,7 @@ h4 {
     display: block;
     z-index: 1;
 }
-.teacher-section {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
 .teacher-card {
     display: flex;
     align-items: stretch;
@@ -341,30 +341,36 @@ h4 {
     overflow: hidden;
     border-radius: 10px;
 }
+
 .teacher-card.reverse {
     flex-direction: row-reverse;
 }
+
 .teacher-card.reverse .teacher-text::after {
     right: auto;
     left: -80px;
     clip-path: polygon(100% 0, 100% 100%, 0 100%);
 }
+
 .teacher-img {
     flex: 1;
     position: relative;
     overflow: hidden;
 }
+
 .teacher-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .teacher-text {
     flex: 1.1;
     background: #eac7cf;
     padding: 40px 50px;
     position: relative;
 }
+
 .teacher-text::after {
     content: "";
     position: absolute;
@@ -375,6 +381,7 @@ h4 {
     background: #eac7cf;
     clip-path: polygon(0 0, 100% 0, 0 100%);
 }
+
 .right-slant::after {
     content: "";
     position: absolute;
@@ -385,6 +392,7 @@ h4 {
     background: inherit;
     clip-path: polygon(0 0, 100% 0, 0 100%);
 }
+
 .left-slant::after {
     content: "";
     position: absolute;
@@ -395,6 +403,7 @@ h4 {
     background: inherit;
     clip-path: polygon(100% 0, 100% 100%, 0 0);
 }
+
 .teacher-text.right-right::before {
     content: "";
     position: absolute;
@@ -406,6 +415,7 @@ h4 {
     clip-path: polygon(0 0, 100% 0, 0 100%);
     z-index: -1;
 }
+
 .teacher-text.left-slant::before {
     content: "";
     position: absolute;
@@ -417,18 +427,408 @@ h4 {
     clip-path: polygon(100% 0, 100% 100%, 0 0);
     z-index: -1;
 }
+
 .label {
     font-size: 14px;
     opacity: 0.7;
     margin-bottom: 10px;
 }
+
 .name {
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 20px;
 }
+
 .lead {
     font-weight: 700;
     margin-bottom: 25px;
     line-height: 1.6;
+}
+
+/* 基本設定と中央寄せ */
+body {
+    font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+    margin: 0;
+    padding: 40px 20px; /* 上下の余白 */
+}
+
+.skill-points {
+    max-width: 800px; /* 内容の最大幅を設定 */
+    margin: 0 auto; /* 中央寄せ */
+    text-align: center; /* コンテナ内のテキストを中央寄せ */
+}
+
+/* メインタイトル */
+.main-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* キーメトリクスのボックス部分 */
+.key-metrics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.metric-box {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9966; /* オレンジ系の背景色 */
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px; /* 角を丸く */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 軽い影で立体感を出す */
+}
+
+.x-mark {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 15px; /* ×マークの左右の余白 */
+}
+
+.sub-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* 各セクションの設定 */
+.inner {
+    text-align: left; /* セクション内のテキストを左寄せに戻す */
+    margin-top: 30px;
+}
+
+.section-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.checkmark {
+    color: #ff9966; /* チェックマークの色をオレンジに */
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.section-text {
+    font-size: 16px;
+    color: #444;
+    padding-left: 30px; /* チェックマーク部分の字下げ */
+}
+
+/* "続けられる" のハイライト部分 */
+.highlight {
+    color: #ff9966; /* オレンジ色の文字色 */
+    font-weight: bold;
+}
+
+/* 受講の流れ */
+
+.attendance-section {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h5 {
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.attendance-section span {
+    font-size: 70px;
+    letter-spacing: 0.5em;
+    color: #FF7B2B;
+    opacity: 0.5;
+    text-align: center;
+    display: block;
+    z-index: 1;
+}
+
+/* ワークフローリスト */
+.workflow-list {
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    gap: 30px; /* アイテム間のスペース */
+}
+
+.workflow-item {
+    display: flex; /* タイトルと詳細を横並びにする */
+    align-items: stretch; /* 高さ合わせ */
+    text-align: left;
+}
+
+/* 左側の青いタイトルボックス */
+.step-title-box {
+    width: 35%;
+    padding: 20px;
+    background-color: #79c8d7; /* 水色 */
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* 特徴的な傾きを再現する */
+    transform: skewX(-15deg); 
+    margin-right: -30px; /* 詳細ボックスに少し重なるように調整 */
+    z-index: 10; /* 詳細ボックスの上に配置 */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 右側の詳細ボックス */
+.step-detail-box {
+    width: 65%;
+    padding: 25px 20px 25px 50px; /* 左側にパディングを多めに設定 */
+    background-color: #f0f8ff; /* 非常に薄い水色 */
+    border: 1px solid #d0e4e8; /* 薄いボーダー */
+    z-index: 5;
+    /* 角を丸く */
+    border-radius: 5px; 
+}
+
+.step-number {
+    font-size: 16px;
+    color: #a0a0a0; /* 薄い灰色 */
+    margin-bottom: 5px;
+}
+
+.detail-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.detail-text {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+/* 料金プラン */
+
+.price-section span {
+    font-size: 70px;
+    letter-spacing: 0.5em;
+    color: #FF7B2B;
+    opacity: 0.5;
+    text-align: center;
+    display: block;
+    z-index: 1;
+}
+
+body {
+    font-family: 'Kosugi Maru', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+    background-color: #f8fcfb;
+    color: #333;
+    line-height: 1.6;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.price-list {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.page-title {
+    font-size: 32px;
+    color: #4CAF50; 
+    margin-bottom: 40px;
+}
+
+.plan-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    padding: 30px;
+}
+
+.plan-price-area {
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 52px;
+    font-weight: bold;
+    color: #00897B; 
+    margin: 0;
+    line-height: 1.2;
+}
+
+.tax {
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+.payment-method {
+    font-size: 18px;
+    color: #555;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.separator {
+    border: none;
+    border-top: 2px solid #EEEEEE; 
+    margin: 30px 0;
+}
+
+.plan-body {
+    text-align: left;
+}
+
+.support-title {
+    font-size: 20px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #CCFF90; 
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.features-list li {
+    padding: 12px 0;
+    border-bottom: 1px dashed #eee;
+    color: #555;
+    font-size: 16px;
+}
+
+.features-list li:last-child {
+    border-bottom: none;
+}
+
+.check-icon {
+    font-size: 18px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #4CAF50; 
+}
+
+/* ボタン */
+.btn {
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.primary-color { 
+    background-color: #4CAF50;
+}
+
+.btn:hover {
+    background-color: #388E3C;
+}
+
+.note {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Q&A */
+
+body {
+    font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+    background-color: #f7f7f7; /* 薄い背景色 */
+    color: #333;
+    line-height: 1.6;
+    padding: 50px 20px;
+}
+
+.qa-section {
+    padding-top: 50px;
+    max-width: 800px; /* Q&Aリストの最大幅 */
+    margin: 0 auto;
+}
+
+/* 各Q&Aアイテム */
+.faq-item {
+    background-color: #fff; /* 白い背景 */
+    border-radius: 12px; /* 角丸 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* 軽い影 */
+    padding: 25px 30px;
+    margin-bottom: 25px; /* アイテム間のスペース */
+}
+
+/* 質問ボックス（Q1. 質問文） */
+.question-box {
+    display: flex; /* Qとテキストを横並びに */
+    margin-bottom: 15px;
+}
+
+.q-label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FF7043; /* Qの文字色（オレンジ系） */
+    margin: 0;
+    margin-right: 15px;
+    flex-shrink: 0; /* 幅が縮まないように */
+}
+
+.question-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+/* 回答ボックス（A1. 回答文） */
+.answer-box {
+    display: flex; /* Aとテキストを横並びに */
+}
+
+.a-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4CAF50; /* Aの文字色（緑系） */
+    margin: 0;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.answer-text {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+}
+
+.faq-item > .question-box:not(:last-child) {
+    border-bottom: 1px solid #f0f0f0; 
+    padding-bottom: 15px;
 }
