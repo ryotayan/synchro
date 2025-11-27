@@ -20,8 +20,7 @@ img {
 .container {
     max-width: 1280px;
     padding-inline: 16px;
-    margin: 50px auto 0;
-    
+    margin: 100px auto 0;
 }
 
 li {
@@ -64,6 +63,7 @@ h4 {
     position: fixed;
     z-index: 20;
     background-color: #f7f7f7;
+    position: fixed;
 }
 
 
@@ -328,6 +328,33 @@ text-shadow:
 }
 
 /* ユーチューブ動画 */
+
+.youtube-highlight-banner {
+    background-color: #fcf8e3;
+    border: 2px solid #e0b06b;
+    border-radius: 15px;
+    padding: 20px 30px;
+    margin: 70px auto 30px;
+    max-width: 700px; 
+    text-align: center; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.highlight-content .text-emphasis {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #cc6600;
+    white-space: nowrap;
+}
+
+.sparkle-left, .sparkle-right, .icon-trophy, .icon-youtube {
+    font-size: 1.5em;
+    vertical-align: middle;
+    margin: 0 8px;
+}
+
 iframe {
     display: block;
     margin: 0 auto; 
@@ -340,7 +367,6 @@ iframe {
     position: relative;
     width: 90%;
     max-width: 1200px;
-    /* margin: 0 auto; */
 }
 
 
@@ -890,7 +916,7 @@ iframe {
 }
 
 .q-label {
-    font-size: 18px;
+    font-size: 16gitpx;
     font-weight: bold;
     color: #FF7043; /* Qの文字色（オレンジ系） */
     margin: 0;
@@ -928,4 +954,12 @@ iframe {
 .faq-item > .question-box:not(:last-child) {
     border-bottom: 1px solid #f0f0f0; 
     padding-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+}
+
+small {
+    font-size: 9.6px;
 }
