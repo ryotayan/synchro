@@ -884,6 +884,39 @@ iframe {
     }
 }
 
+/* 卒業生の実績 */
+.pickup {
+  padding: 65px 0 20px;
+}
+
+.slide-items {
+  width: 100%;
+  display: flex;
+  max-width: 100%;
+  margin: auto;
+}
+
+.slide-items li {
+  height: auto;
+  padding-inline: 10px;
+}
+
+.slide-items img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-items {
+  cursor: grab; /* ホバー時に手の形に */
+}
+
+.slide-items:active {
+  cursor: grabbing; /* ドラッグ中は握った手に */
+}
+
+
+
 /* ホバーで浮く動き */
 .card:hover {
     transform: translateY(-10px);
