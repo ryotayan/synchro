@@ -576,7 +576,7 @@ iframe {
     position: relative;
     width: 90%;
     max-width: 1200px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .attendance-section span {
@@ -588,6 +588,7 @@ iframe {
     display: block;
     z-index: 1;
     position: relative;
+    margin-bottom: 30px;
 }
 
 /* ワークフローリスト */
@@ -654,14 +655,14 @@ iframe {
 
 /* 料金プラン */
 
-.attendance-section {
+.price-list{
     position: relative;
     width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
 }
 
-.attendance-section span {
+.bg-price {
     font-size: 70px;
     letter-spacing: 0.5em;
     color: #FF7B2B;
@@ -670,31 +671,13 @@ iframe {
     display: block;
     z-index: 1;
     position: relative;
+    margin-bottom: 30px;
 }
 
-.price-section span {
-    font-size: 70px;
-    letter-spacing: 0.5em;
-    color: #FF7B2B;
-    opacity: 0.5;
-    text-align: center;
-    display: block;
-    z-index: 1;
-}
-
-.price-list {
-    max-width: 600px;
-    margin: 0 auto;
-    padding-top: 50px;
-}
-
-/* .page-title {
-    font-size: 32px;
-    color: #4CAF50; 
-    margin-bottom: 40px;
-} */
 
 .plan-card {
+    max-width: 800px;
+    margin: 0 auto;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
@@ -707,11 +690,13 @@ iframe {
 }
 
 .price {
-    font-size: 52px;
+    font-size: 60px;
     font-weight: bold;
     color: #00897B; 
     margin: 0;
     line-height: 1.2;
+    text-align: center;
+    padding-left: 60px;
 }
 
 .tax {
@@ -725,6 +710,7 @@ iframe {
     color: #555;
     font-weight: bold;
     margin-top: 5px;
+    text-align: center;
 }
 
 .separator {
@@ -798,6 +784,7 @@ iframe {
     margin-top: 25px;
     font-size: 14px;
     color: #888;
+    text-align: center;
 }
 
 /* 卒業生の声 */
@@ -890,9 +877,9 @@ iframe {
 }
 
 .slide-items {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
-  max-width: 100%;
+  /* max-width: 100%; */
   margin: auto;
 }
 
