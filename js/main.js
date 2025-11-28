@@ -24,12 +24,12 @@ $(function () {
   });
 
   // #maskのエリアをクリックした時にメニューを閉じる
-  $("#mask").on("click", function () {
+  $(".mask").on("click", function () {
     $("header").removeClass("open");
   });
 
   // リンクをクリックした時にメニューを閉じる
-  $("#nav a").on("click", function () {
+  $("nav a").on("click", function () {
     $("header").removeClass("open");
   });
 });
