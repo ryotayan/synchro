@@ -6,10 +6,23 @@
     <title>ProNavi by synchro</title>
     <meta name="description" content="ProNaviとは「在宅ワークを叶えたい方」に選ばれている6ヶ月集中のプログラミングスクールです。" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- ファビコン -->
     <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- CSSリセット -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+
+    <!-- 自作CSS -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Slick用CSS -->
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick.theme.css" />
+
     <!-- Google Tag Manager -->
     <script>
         (function (w, d, s, l, i) {
@@ -38,21 +51,31 @@
         <h1 class="site-header__logo"><img src="img/logo.png" alt="logo" /></h1>
 
         <ul class="site-header__nav">
-            <li class="nav_about"><a href="">プロナビとは</a></li>
-            <li class="nav_#"><a href="">選ばれる理由</a></li>
-            <li class="nav_#"><a href="">サポート内容</a></li>
-            <li class="nav_#"><a href="">受講の流れ</a></li>
-            <li class="nav_#"><a href="">料金</a></li>
-            <li class="nav_#"><a href="">卒業生の声</a></li>
-            <li class="nav_#"><a href="">Q&A</a></li>
-            <li class="nav_btn"><a href="https://line.me/R/ti/p/@420zidsx?oat_content=url">無料カウンセリングを予約する</a></li>
+            <li class="nav_about"><a href="#pronavi">プロナビとは</a></li>
+            <li class="nav_#"><a href="#reasons">選ばれる理由</a></li>
+            <li class="nav_#"><a href="#teacher">講師紹介</a></li>
+            <li class="nav_#"><a href="#workflow">受講の流れ</a></li>
+            <li class="nav_#"><a href="#price">料金</a></li>
+            <li class="nav_#"><a href="#graduate">卒業生の声・実績</a></li>
+            <li class="nav_#"><a href="#Q&A">Q&A</a></li>
         </ul>
+        <div class="nav_btn"><a href="https://line.me/R/ti/p/@420zidsx?oat_content=url">無料カウンセリングを予約する</a></div>
+
+
+        <button class="hamburger" aria-label="メニューを開く">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="mask"></div>
+
     </header>
 
     <!-- メインビジュアル -->
     <section class="hero">
         <h1 class="catch">
-            学ぶだけじゃない、<br />
+            学ぶだけじゃない、<br>
             “仕事にできる”プログラミング。
         </h1>
 
@@ -61,12 +84,12 @@
         </div>
     </section>
 
-    <section class="about-contents container">
+    <section class="about-contents container" id="pronavi">
         <div class="about-inner">
             <div class="about-title">
                 <h2>
-                    ProNaviとは<br />
-                    「在宅ワークを叶えたい方」に選ばれている<br />
+                    ProNaviとは<br>
+                    「在宅ワークを叶えたい方」に選ばれている<br>
                     <span>6ヶ月集中のプログラミングスクール</span>です。
                 </h2>
             </div>
@@ -78,11 +101,11 @@
             </p>
         </div>
         <div class="about-img">
-            <img src="img/33716241_s.jpg" alt="" />
+            <img src="img/33716241_s.jpg" alt="">
         </div>
     </section>
 
-    <section class="reasons-contents container">
+    <section class="reasons-contents container" id="reasons">
         <h3>選ばれる理由</h3>
         <span>REASONS</span>
         <div class="flex">
@@ -132,13 +155,15 @@
         </div>
     </div>
 
-    <iframe width="700" height="500" src="https://www.youtube.com/embed/0Te2W50okgM" title="YouTube video"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-    </iframe>
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/0Te2W50okgM" title="YouTube video" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
 
 
-    <section class="teacher-section container">
+    <section class="teacher-section container" id="teacher">
         <h3>講師紹介</h3>
         <span>TEACHER</span>
         <!-- TETSU（写真 左 / テキスト 右） -->
@@ -244,7 +269,7 @@
         </div>
     </div>
 
-    <section class="attendance-section container">
+    <section class="attendance-section container" id="workflow">
         <h3>受講の流れ</h3>
         <span>WORKFLOW</span>
 
@@ -316,7 +341,7 @@
         </div>
     </section>
 
-    <section class="price-list container">
+    <section class="price-list container" id="price">
         <h3>料金</h3>
         <span class="bg-price">PRICE</span>
 
@@ -326,98 +351,103 @@
                 <p class="payment-method">一括払い / 分割払い</p>
             </div>
 
-            <hr class="separator">
-
-            <div class="plan-body">
-                <h9 class="support-title">充実のサポート内容</h9>
-                <ul class="features-list">
-                    <li><span class="check-icon">✓</span> マンツーマン指導(専属コーチ)</li>
-                    <li><span class="check-icon">✓</span> オンライン講義・教材一式</li>
-                    <li><span class="check-icon">✓</span> 6ヶ月集中サポート</li>
-                    <li><span class="check-icon">✓</span> 24時間質問OK(チャット対応)</li>
-                    <li><span class="check-icon">✓</span> ポートフォリオ支援</li>
-                    <li><span class="check-icon">✓</span> 案件獲得サポート</li>
-                    <li><span class="check-icon">✓</span> 無料カウンセリング</li>
-                    <li><span class="check-icon">✓</span> 全員現役エンジニア講師</li>
-                </ul>
-                <a href="https://line.me/R/ti/p/@420zidsx?oat_content=url" class="btn primary-color">無料カウンセリングを予約する</a>
+            <article class="separator">
+                <div class="plan-body">
+                    <h9 class="support-title">充実のサポート内容</h9>
+                    <ul class="features-list">
+                        <li><span class="check-icon">✓</span> マンツーマン指導(専属コーチ)</li>
+                        <li><span class="check-icon">✓</span> オンライン講義・教材一式</li>
+                        <li><span class="check-icon">✓</span> 6ヶ月集中サポート</li>
+                        <li><span class="check-icon">✓</span> 24時間質問OK(チャット対応)</li>
+                        <li><span class="check-icon">✓</span> ポートフォリオ支援</li>
+                        <li><span class="check-icon">✓</span> 案件獲得サポート</li>
+                        <li><span class="check-icon">✓</span> 無料カウンセリング</li>
+                        <li><span class="check-icon">✓</span> 全員現役エンジニア講師</li>
+                    </ul>
+                </div>
+            </article>
+            <div class="nav_btn price-btn"><a href="https://line.me/R/ti/p/@420zidsx?oat_content=url">無料カウンセリングを予約する</a>
             </div>
         </div>
 
         <p class="note">※上記料金には教材費、カリキュラム利用料がすべて含まれます。</p>
     </section>
 
-
-    <ul class="cards">
-        <li class="card">
-            <div class="card-flex">
-                <img src="img/student1.jpg" alt="生徒１">
-                <div class="card-name">M.M <br>
-                    20代後半<br>
-                    2023年5月入会
+    <section class="reasons-contents container" id="graduate">
+        <h3>卒業生の声・実績</h3>
+        <span>GRADUATE</span>
+        <ul class="cards">
+            <li class="card">
+                <div class="card-flex">
+                    <img src="img/student1.jpg" alt="生徒１">
+                    <div class="card-name">M.M <br>
+                        20代後半<br>
+                        2023年5月入会
+                    </div>
                 </div>
-            </div>
-            <p class="card-text">
-                １対１で質問できると聞いて、プロナビに入り、実際に２ヶ月ほど１対１で教えていただきました。案件獲得も３度ほど同行いただいたため、案件の進め方も教えていただきました。
-            </p>
-        </li>
-        <li class="card">
-            <div class="card-flex">
-                <img src="img/student2.jpg" alt="生徒２">
+                <p class="card-text">
+                    １対１で質問できると聞いて、プロナビに入り、実際に２ヶ月ほど１対１で教えていただきました。案件獲得も３度ほど同行いただいたため、案件の進め方も教えていただきました。
+                </p>
+            </li>
+            <li class="card">
+                <div class="card-flex">
+                    <img src="img/student2.jpg" alt="生徒２">
 
-                <div class="card-name">N.Y <br>
-                    20代後半<br>
-                    2022年6月入会
+                    <div class="card-name">N.Y <br>
+                        20代後半<br>
+                        2022年6月入会
+                    </div>
                 </div>
-            </div>
-            <p class="card-text">
-                マンツーマンで授業してもらい、疑問を一緒に解決してもらえるだけではなく、課題があるので自分で調べたり考えたりする力もついたと思います。案件に向けてもきめ細かいサポートがあるので、プロナビで学習できてよかったと実感してます。
-            </p>
-        </li>
-        <li class="card">
-            <div class="card-flex">
-                <img src="img/student3.jpg" alt="生徒３">
-                <div class="card-name">Y.K <br>
-                    20代後半<br>
-                    2023年4月入会
+                <p class="card-text">
+                    マンツーマンで授業してもらい、疑問を一緒に解決してもらえるだけではなく、課題があるので自分で調べたり考えたりする力もついたと思います。案件に向けてもきめ細かいサポートがあるので、プロナビで学習できてよかったと実感してます。
+                </p>
+            </li>
+            <li class="card">
+                <div class="card-flex">
+                    <img src="img/student3.jpg" alt="生徒３">
+                    <div class="card-name">Y.K <br>
+                        20代後半<br>
+                        2023年4月入会
+                    </div>
                 </div>
-            </div>
-            <p class="card-text">
-                何人かとお話しをしてみて、信用できる！と感じて入会しましたが、案件獲得までこんなにサポートしてもらえるなんでびっくりです！皆さんに出会えて本当に幸せです！
-            </p>
+                <p class="card-text">
+                    何人かとお話しをしてみて、信用できる！と感じて入会しましたが、案件獲得までこんなにサポートしてもらえるなんでびっくりです！皆さんに出会えて本当に幸せです！
+                </p>
 
-        </li>
-        <li class="card">
-            <div class="card-flex">
-                <img src="img/student4.jpg" alt="生徒４">
+            </li>
+            <li class="card">
+                <div class="card-flex">
+                    <img src="img/student4.jpg" alt="生徒４">
 
-                <div class="card-name">M.H <br>
-                    20代前半<br>
-                    2023年8月入会
+                    <div class="card-name">M.H <br>
+                        20代前半<br>
+                        2023年8月入会
+                    </div>
                 </div>
-            </div>
-            <p class="card-text">
-                副業からフリーランスになりたいと思って入会しました。優しく向上心が高い方が多いので、初心者の私でも挫折せずに進められましたし、今までの自分からは考えられない全く別の職種が広がり、考え方や人生観も変わりました。
-            </p>
+                <p class="card-text">
+                    副業からフリーランスになりたいと思って入会しました。優しく向上心が高い方が多いので、初心者の私でも挫折せずに進められましたし、今までの自分からは考えられない全く別の職種が広がり、考え方や人生観も変わりました。
+                </p>
 
-        </li>
-
-    </ul>
-
-    <section class="case-slider-section container">
-        <ul class="slide-items">
-            <li><img src="img/1.jpg" alt=""></li>
-            <li><img src="img/2.jpg" alt=""></li>
-            <li><img src="img/3.jpg" alt=""></li>
-            <li><img src="img/4.jpg" alt=""></li>
-            <li><img src="img/5.jpg" alt=""></li>
-            <li><img src="img/6.jpg" alt=""></li>
-            <li><img src="img/7.jpg" alt=""></li>
-            <li><img src="img/8.jpg" alt=""></li>
+            </li>
         </ul>
     </section>
 
-    <div class="qa-section container">
+    <section class="case-slider-section container">
+        <ul class="slide-items">
+            <li><img src="img/1.jpg" alt="卒業生1"></li>
+            <li><img src="img/2.jpg" alt="卒業生2"></li>
+            <li><img src="img/3.jpg" alt="卒業生3"></li>
+            <li><img src="img/4.jpg" alt="卒業生4"></li>
+            <li><img src="img/5.jpg" alt="卒業生5"></li>
+            <li><img src="img/6.jpg" alt="卒業生6"></li>
+            <li><img src="img/7.jpg" alt="卒業生7"></li>
+            <li><img src="img/8.jpg" alt="卒業生8"></li>
+        </ul>
+    </section>
+
+    <section class="qa-section container" id="Q&A">
+        <h3>よくある質問</h3>
+        <span>Q&A</span>
         <div class="faq-item">
             <div class="question-box">
                 <p class="q-label">Q1.</p>
@@ -495,11 +525,15 @@
                 </p>
             </div>
         </div>
-    </div>
+    </section>
 
     <footer>
         <small>© COPYRIGHT NOE Co.ltd</small>
     </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
