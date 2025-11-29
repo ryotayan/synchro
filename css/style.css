@@ -54,6 +54,12 @@ section {
     position: relative;
 }
 
+.wrapper {
+    max-width: 1280px;
+    padding-inline: 16px;
+    margin: 0 auto;
+}
+
 .sec-title {
     font-size: 30px;
     text-align: center;
@@ -79,14 +85,21 @@ section {
 
 
 /* ヘッダー */
-.site-header {
+.site-header .wrapper {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
     z-index: 20;
     background-color: #f7f7f7;
+}
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
 }
 
 
