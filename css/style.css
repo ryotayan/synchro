@@ -193,6 +193,13 @@ section {
     display: none;
 }
 
+.nav-pc {
+    display: flex;
+}
+.nav-sp {
+    display: none;
+}
+
 /* メインビジュアル */
 .hero {
     max-width: 1200px;
@@ -323,7 +330,7 @@ section {
 /* 選ばれる理由 */
 .reasons-contents {
     position: relative;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 
@@ -400,18 +407,19 @@ section {
 .video {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%;
+    max-width: 800px;
+    padding-bottom: 0;
     /* 16:9 の比率 */
-    height: 0;
+    height: auto;
+    margin: 0 auto 20px;
 }
 
 .video iframe {
-    position: absolute;
-    width: 70%;
-    height: 70%;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; 
+    display: block;
+    border: none;
 }
 
 /* 講師紹介 */
@@ -710,8 +718,6 @@ section {
 .price-list {
     position: relative;
     width: 90%;
-    /* max-width: 1200px; */
-    /* margin: 0 auto; */
 }
 
 .plan-card {
@@ -951,7 +957,6 @@ section {
     max-width: 800px;
 }
 
-/* 各Q&Aアイテム */
 .faq-item {
     background-color: #fff;
     /* 白い背景 */
@@ -964,10 +969,8 @@ section {
     /* アイテム間のスペース */
 }
 
-/* 質問ボックス（Q1. 質問文） */
 .question-box {
     display: flex;
-    /* Qとテキストを横並びに */
     margin-bottom: 15px;
 }
 
@@ -979,7 +982,6 @@ section {
     margin: 0;
     margin-right: 15px;
     flex-shrink: 0;
-    /* 幅が縮まないように */
 }
 
 .question-text {
@@ -989,10 +991,8 @@ section {
     margin: 0;
 }
 
-/* 回答ボックス（A1. 回答文） */
 .answer-box {
     display: flex;
-    /* Aとテキストを横並びに */
 }
 
 .a-label {
@@ -1017,7 +1017,6 @@ section {
 
 footer {
     text-align: center;
-    margin-top: 100px;
 }
 
 small {
@@ -1065,11 +1064,12 @@ small {
     }
 
     .hamburger span {
+        display: block;
         width: 40px;
-        height: 2px;
+        height: 3px;
         background-color: #121212;
         border-radius: 4px;
-        display: block;
+        margin: 6px 0;
         position: absolute;
         left: 0;
         transition: 0.5s;
@@ -1092,22 +1092,6 @@ small {
     }
 
     .open .hamburger span:nth-child(1) {
-        transform: translateY(10px) rotate(-45deg);
-    }
-
-    .open .hamburger span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .open .hamburger span:nth-child(3) {
-        transform: translateY(-10px) rotate(45deg);
-    }
-
-    .open .hamburger span {
-        background-color: #fff;
-    }
-
-    .open .hamburger span:nth-child(1) {
         transform: translateY(15px) rotate(-45deg);
     }
 
@@ -1119,9 +1103,49 @@ small {
         transform: translateY(-15px) rotate(45deg);
     }
 
-    .mask {
+    .nav-pc {
         display: none;
-        transition: 0.5s;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        z-index: 1100;
+    }
+
+    .nav-sp {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100%;
+        background: #fff;
+        transform: translateX(100%);
+        opacity: 0;
+        transition: transform .45s cubic-bezier(0.25, 1, 0.5, 1),
+        opacity .35s ease-out;
+        padding: 40px 20px;
+        z-index: 1001;
+    }
+
+    header.open .nav-sp {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .mask {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0);
+        pointer-events: none;
+        transition: background .35s ease;
+        z-index: 1000
+    }
+    
+    header.open .mask {
+        background: rgba(0,0,0,0.5);
+        pointer-events: auto;
     }
 
     .open .mask {
@@ -1138,7 +1162,7 @@ small {
     }
 
     .open .site-header__nav {
-        width: 300px;
+        /* width: 300px; */
         background: #fff;
         padding: 25px;
         position: fixed;
@@ -1159,7 +1183,7 @@ small {
     .catch {
         font-size: 30px;
         transform: rotate(0deg);
-        top: 120px;
+        top: 160px;
     }
 
     .hero-img-wrapper img {
@@ -1191,9 +1215,14 @@ small {
         object-position: 0% 0%;
     }
 
+    .video {
+        max-width: 95%;
+    }
+
     .video iframe {
-        width: 80%;
-        height: 80%;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
     }
 
     .youtube-highlight-banner {
@@ -1230,6 +1259,7 @@ small {
     .about-inner {
         width: 100%;
         margin: 0;
+        margin-bottom: 20px;
     }
 
 
@@ -1246,6 +1276,30 @@ small {
         font-size: 0.8em;
     }
 
+    /* 受講の流れ */
+
+    .workflow-list {
+        flex-direction: column; /* 縦並び */
+        align-items: center;    /* 真ん中寄せ */
+        gap: 20px;              /* アイテム間のスペース */
+        text-align: center;     /* タイトルやテキストも中央寄せ */
+    }
+
+    .workflow-item {
+        width: 100%;             /* 幅を狭めて中央に配置 */
+    }
+
+    .step-title-box,
+    .step-detail-box {
+        width: 100%;            /* ボックス幅を100%に */
+        transform: none;        /* skewを解除して自然に表示 */
+        margin-right: 0;        /* 右マージンをリセット */
+    }
+
+    .step-detail-box {
+        padding-left: 20px;     /* テキストの余白調整 */
+    }
+
     /* 卒業生の声 */
 
     .cards {
@@ -1255,5 +1309,6 @@ small {
     .card {
         width: 100%;
     }
+
 
 }
