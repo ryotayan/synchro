@@ -134,7 +134,12 @@ section {
     padding: 20px;
 }
 
-.nav_btn a {
+.nav_btn-res {
+    display: none;
+}
+
+.nav_btn a,
+.nav_btn-res a {
     background-color: #08A4D6;
     background: linear-gradient(to bottom, #1cc8f0, #08A4D6);
     border-radius: 10px;
@@ -1036,6 +1041,7 @@ small {
     .sec-title {
         top: 30px;
         margin-bottom: 30px;
+        width: 100%;
     }
 
     section {
@@ -1044,21 +1050,54 @@ small {
 
 
     /* ヘッダー */
+
+    header {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+
     .site-header__nav {
         display: none;
     }
 
-    .nav_btn {
-        margin-right: 90px;
+    .site-header__logo {
+        padding: 0 0 0 10px;
+    }
+
+    .site-header__logo img {
+        width: 165px;
+        padding: 20px 0 15px;
+    }
+
+    header .nav_btn {
+        display: none;
+    }
+
+    .nav_btn-res {
+        display: block;
+        /* margin-right: 90px; */
+        /* position: absolute; */
+        top: 13px;
+        right: 90px;
+        max-width: 145px;
+        
+    }
+
+    .nav_btn-res a {
+        padding: 5px 10px;
+        font-size: 10px;
+        line-height: 30px;
     }
 
     .hamburger {
         width: 50px;
         height: 50px;
         cursor: pointer;
-        position: fixed;
-        top: 30px;
-        right: 20px;
+        /* position: fixed; */
+        /* top: 13px;
+        right: 10px; */
+        position: relative;
         transition: 0.5s;
         z-index: 20;
     }
@@ -1076,15 +1115,15 @@ small {
     }
 
     .hamburger span:nth-child(1) {
-        top: 10px;
+        top: 2px;
     }
 
     .hamburger span:nth-child(2) {
-        top: 25px;
+        top: 18px;
     }
 
     .hamburger span:nth-child(3) {
-        top: 40px;
+        top: 34px;
     }
 
     .open .hamburger span {
@@ -1181,10 +1220,12 @@ small {
     /* メインビジュアル */
 
     .catch {
-        font-size: 30px;
+        font-size: 23px;
         transform: rotate(0deg);
-        top: 160px;
+        top: 100px;
+        padding-top: 30px;
     }
+
 
     .hero-img-wrapper img {
         top: 100px;
@@ -1300,6 +1341,18 @@ small {
         padding-left: 20px;     /* テキストの余白調整 */
     }
 
+    .price-btn {
+        padding-inline: 10px;
+    }
+
+    .plan-card .nav_btn {
+        padding: 0 0 20px 0;
+    }
+
+    .features-list {
+        margin: 0;
+    }
+
     /* 卒業生の声 */
 
     .cards {
@@ -1309,6 +1362,5 @@ small {
     .card {
         width: 100%;
     }
-
 
 }
